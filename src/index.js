@@ -5,12 +5,5 @@ import App from './App';
 import registerServiceWorker from './registerServiceWorker';
 
 
-const getCurrentDate = () => {
-    const date = new Date();
-    return date.toString();
-}
-
-const greeting = <h1> Hello World Current Date: {getCurrentDate()}</h1>
-
-ReactDOM.render(greeting, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById('root'));
 registerServiceWorker();
