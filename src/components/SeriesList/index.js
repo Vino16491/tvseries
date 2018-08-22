@@ -1,11 +1,11 @@
 import React from 'react';
-
+import './index.css';
 const SeriesList = (props) =>{
     return (
         <div>
-            <ul>
+            <ul className="series-list">
                 {props.list.map(series => (
-                    <li>{series.show.name}</li>
+                    <li key={series.show.id}>{series.show.name}</li>
                 ))}
             </ul>
         </div>
